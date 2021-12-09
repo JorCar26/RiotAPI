@@ -1,0 +1,12 @@
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\bin\Debug\RiotApiApplication.exe.config
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\bin\Debug\RiotApiApplication.exe
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\bin\Debug\RiotApiApplication.pdb
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\bin\Debug\Camille.dll
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\bin\Debug\Newtonsoft.Json.dll
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\bin\Debug\Newtonsoft.Json.xml
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\obj\Debug\RiotApiApplication.csproj.CoreCompileInputs.cache
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\obj\Debug\RiotApiApplication.csproj.CopyComplete
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\obj\Debug\RiotApiApplication.exe
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\obj\Debug\RiotApiApplication.pdb
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\obj\Debug\RiotApiApplication.csproj.Fody.CopyLocal.cache
+C:\Users\davis\Desktop\RiotApi\RiotApiApplication\RiotApiApplication\obj\Debug\RiotApiApplication.csprojAssemblyReference.cache

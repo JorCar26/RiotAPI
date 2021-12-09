@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\PropertyChanged.Fody.3.4.0\build\PropertyChanged.Fody.props" Condition="Exists('..\packages\PropertyChanged.Fody.3.4.0\build\PropertyChanged.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13E0BA20-5667-4C91-B998-FC2FEE42349A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RiotApiWindowsForm</RootNamespace>
+    <AssemblyName>RiotApiWindowsForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Camille, Version=2.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MingweiSamuel.Camille.2.8.0\lib\net45\Camille.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PropertyChanged, Version=3.4.0.0, Culture=neutral, PublicKeyToken=ee3ee20bcf148ddd, processorArchitecture=MSIL">
+      <HintPath>..\packages\PropertyChanged.Fody.3.4.0\lib\net40\PropertyChanged.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.3\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.AccountV1.Account.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.AccountV1.ActiveShard.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.AccountV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ChampionMasteryV4.ChampionMastery.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ChampionMasteryV4Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ChampionV3.ChampionInfo.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ChampionV3Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ClashV1.Player.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ClashV1.Team.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ClashV1.Tournament.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ClashV1.TournamentPhase.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ClashV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.Enums.ChampionId.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.Enums.ChampionUtils.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.Enums.Locale.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.Enums.Position.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.Enums.Queue.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.Enums.Region.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.Enums.TeamId.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.Enums.Tier.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.IRiotApiConfig.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LeagueExpV4.LeagueEntry.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LeagueExpV4.MiniSeries.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LeagueExpV4Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LeagueV4.LeagueEntry.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LeagueV4.LeagueItem.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LeagueV4.LeagueList.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LeagueV4.MiniSeries.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LeagueV4Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LolStatusV3Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LolStatusV4Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LorMatchV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LorRankedV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.LorStatusV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.Mastery.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.Match.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.MatchEvent.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.MatchFrame.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.Matchlist.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.MatchParticipantFrame.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.MatchPosition.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.MatchReference.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.MatchTimeline.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.Participant.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.ParticipantIdentity.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.ParticipantStats.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.ParticipantTimeline.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.Player.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.Rune.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.TeamBans.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4.TeamStats.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV4Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV5.Match.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV5.MatchTimeline.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.MatchV5Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.RiotApi.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.RiotApiConfig+Builder.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.RiotApiConfig.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.SpectatorV4Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.SummonerV4.Summoner.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.SummonerV4Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.TftLeagueV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.TftMatchV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.TftSummonerV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ThirdPartyCodeV4Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.TournamentStubV4Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.TournamentV4Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ValContentV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ValMatchV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ValRankedV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\MingweiSamuel.Camille.ValStatusV1Endpoints.datasource" />
+    <None Include="Properties\DataSources\SummonerViewModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.6.5.1\build\Fody.targets" Condition="Exists('..\packages\Fody.6.5.1\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.6.5.1\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.6.5.1\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\PropertyChanged.Fody.3.4.0\build\PropertyChanged.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\PropertyChanged.Fody.3.4.0\build\PropertyChanged.Fody.props'))" />
+  </Target>
+</Project>
