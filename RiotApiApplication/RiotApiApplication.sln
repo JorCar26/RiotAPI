@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiotApiApplication", "RiotApiApplication\RiotApiApplication.csproj", "{E28A9A82-3C9E-4C1B-81B8-C0BF00C2D1BD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D510D40F-058D-467F-836A-B981CCB36A02}"
 	ProjectSection(SolutionItems) = preProject
 		Program.cs = Program.cs
@@ -18,10 +16,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E28A9A82-3C9E-4C1B-81B8-C0BF00C2D1BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E28A9A82-3C9E-4C1B-81B8-C0BF00C2D1BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E28A9A82-3C9E-4C1B-81B8-C0BF00C2D1BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E28A9A82-3C9E-4C1B-81B8-C0BF00C2D1BD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{13E0BA20-5667-4C91-B998-FC2FEE42349A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{13E0BA20-5667-4C91-B998-FC2FEE42349A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13E0BA20-5667-4C91-B998-FC2FEE42349A}.Release|Any CPU.ActiveCfg = Release|Any CPU
